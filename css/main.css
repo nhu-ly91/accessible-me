@@ -14,12 +14,22 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
-.Skip{
+.skip{
+  position:absolute;
   top:auto;
   width: 2px;
   height: 2px;  
   color: black;
   text-decoration: none;
+  overflow: hidden;
+}
+
+.skip:focus{
+  position: static;
+  width: auto;
+  height: auto;
+  border: yellow solid 4px;
+  padding: 2px;
 }
 
 .container {
@@ -30,6 +40,12 @@ h6 {
 
 img {
   width: 100%;
+}
+
+.main-nav ul li a:focus{
+  position: static;
+  border: yellow solid 4px;
+  padding: 2px;
 }
 
 .main-nav ul {
@@ -58,6 +74,18 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+}
+
+form input:focus{
+  position: static;
+  border: yellow solid 4px;
+  padding: 2px;
+}
+
+form textarea:focus{
+  position: static;
+  border: yellow solid 4px;
+  padding: 2px;
 }
 
 form textarea {
