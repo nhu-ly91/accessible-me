@@ -16,15 +16,15 @@
 <body>
   <div class="container">
     <header>
-      <a href="#main" class="skip">Skip to main content</a>
+      <a href="#main-content" aria-label="Skip to main content" class="skip">Skip to main content</a>
       <div class="site-header">
         <h1>Jam Box Studios</h1>
-        <div role="navigation" class="main-nav">
+        <div role="navigation" aria-label="main" class="main-nav">
           <ul>
-            <li><a href="#main">Home</a></li>
-            <li><a href="#main">Products</a></li>
-            <li><a href="#main">Reservation</a></li>
-            <li><a href="#main">Studio</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#studio">Studio</a></li>
           </ul>
         </div>
         <img src="https://placekitten.com/1200/900" class="banner" alt="cat-photo">
@@ -62,7 +62,7 @@
         </div>
         <div role="form" class="contact-section">
           <h1>Contact Us</h1>
-          <form action="thanks.html">
+          <form aria-label="contact us using this form" action="thanks.html">
             <label for="fname">Full Name</label>
             <input type="text" placeholder="Full Name" id="fname">
             <label for="email">Email</label>
@@ -71,7 +71,7 @@
             <input type="text" placeholder="Subject" id="subject">
             <label for="message">Your Message</label>
             <textarea id="message"></textarea>
-            <button type="submit">Send</button>
+            <button aria-label="submit" type="submit">Send</button>
           </form>
         </div>
       </div>
